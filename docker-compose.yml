@@ -4,7 +4,7 @@ networks:
     driver: bridge
 volumes:
     prometheus_data: {}
-    grafana_data: {}
+#    grafana_data: {}
 services:
   prometheus:
     image: prom/prometheus:v2.31.1
@@ -83,7 +83,7 @@ services:
     image: grafana/grafana:8.2.2
     container_name: grafana
     volumes:
-      - grafana_data:/var/lib/grafana
+      - ./grafana/grafana_data:/var/lib/grafana
       - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
       - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
     environment:
