@@ -72,17 +72,9 @@ Of course, no one template will serve all projects since your needs may be diffe
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 * Docker
-
 * Docker-compose
-
-  
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -92,25 +84,18 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* Memory  >=2G
-  
+* Memory  >=2G  
   ```sh
   free -h
   ```
-
 - Docker Version >=18.00
-
   ```sh
   docker version
   ```
-
 - Docker Compose Version >=1.1
-
   ```sh
   docker-compose version
-  ```
-
-  
+  ``` 
 
 ### Installation
 
@@ -133,11 +118,14 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    docker-compose down -v
    ```
-5. 
-   
+5. Delete all containers using the following command
+   ```sh
+   docker rm -f $(docker ps -a -q)
    ```
-
-   
+6. Delete all volumes using the following command
+   ```sh
+   docker volume rm $(docker volume ls -q)
+   ```
 
 ​       <!-- USAGE EXAMPLES -->
 
