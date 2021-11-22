@@ -54,7 +54,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Screenshot](resources/stacks.png)
 
 A monitoring solution for Docker hosts and containers with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor](https://github.com/google/cadvisor), [NodeExporter](https://github.com/prometheus/node_exporter) and alerting with [AlertManager](https://github.com/prometheus/alertmanager).
 
@@ -72,17 +72,9 @@ Of course, no one template will serve all projects since your needs may be diffe
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 * Docker
-
 * Docker-compose
-
-  
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -92,25 +84,18 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* Memory  >=2G
-  
+* Memory  >=2G  
   ```sh
   free -h
   ```
-
 - Docker Version >=18.00
-
-  ```
+  ```sh
   docker version
   ```
-
 - Docker Compose Version >=1.1
-
-  ```
+  ```sh
   docker-compose version
-  ```
-
-  
+  ``` 
 
 ### Installation
 
@@ -123,20 +108,27 @@ _Below is an example of how you can instruct your audience on installing and set
 2. Switch to directory then setup ownership
    ```sh
    cd docker-pancgoth-stack
+   ```
+3. Setup ownership as grafana
+   ```sh
    sudo chown 472:472 -R grafana/grafana_data
    ```
-3. Start up docker stack  as deamon
-   ```js
+4. Start up docker stack  as deamon
+   ```sh
    docker-compose up -d
    ```
-
-4. 
-
-5. ```
-   
+5. Stop docker stack
+   ```sh
+   docker-compose down -v
    ```
-
-   
+6. Delete all containers using the following command
+   ```sh
+   docker rm -f $(docker ps -a -q)
+   ```
+7. Delete all volumes using the following command
+   ```sh
+   docker volume rm $(docker volume ls -q)
+   ```
 
 ​       <!-- USAGE EXAMPLES -->
 
