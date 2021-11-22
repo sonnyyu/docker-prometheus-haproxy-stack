@@ -126,10 +126,9 @@ _Below is an example of how you can instruct your audience on installing and set
    sudo chown 472:472 -R grafana/grafana_data
    ```
 3. Start up docker stack  as deamon
-   ```js
+   ```sh
    docker-compose up -d
    ```
-
 4. 
 
 5. ```
