@@ -129,9 +129,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    docker-compose up -d
    ```
-4. 
-
-5. ```
+4. Stop docker stack
+   ```sh
+   docker-compose down -v
+   ```
+5. 
    
    ```
 
