@@ -105,7 +105,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/sonnyyu/docker-pancgoth-stack
    ```
-2. Switch to directory then setup ownership
+2. Switch to directory
    ```sh
    cd docker-pancgoth-stack
    ```
