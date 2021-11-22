@@ -100,13 +100,13 @@ This is an example of how to list things you need to use the software and how to
 
 - Docker Version >=18.00
 
-  ```
+  ```sh
   docker version
   ```
 
 - Docker Compose Version >=1.1
 
-  ```
+  ```sh
   docker-compose version
   ```
 
