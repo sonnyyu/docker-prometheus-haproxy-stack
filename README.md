@@ -108,21 +108,24 @@ _Below is an example of how you can instruct your audience on installing and set
 2. Switch to directory then setup ownership
    ```sh
    cd docker-pancgoth-stack
+   ```
+3. Setup ownership as grafana
+   ```sh
    sudo chown 472:472 -R grafana/grafana_data
    ```
-3. Start up docker stack  as deamon
+4. Start up docker stack  as deamon
    ```sh
    docker-compose up -d
    ```
-4. Stop docker stack
+5. Stop docker stack
    ```sh
    docker-compose down -v
    ```
-5. Delete all containers using the following command
+6. Delete all containers using the following command
    ```sh
    docker rm -f $(docker ps -a -q)
    ```
-6. Delete all volumes using the following command
+7. Delete all volumes using the following command
    ```sh
    docker volume rm $(docker volume ls -q)
    ```
