@@ -103,11 +103,11 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sonnyyu/docker-pancgoth-stack
+   git clone https://github.com/sonnyyu/docker-prometheus
    ```
 2. Switch to directory
    ```sh
-   cd docker-pancgoth-stack
+   cd docker-prometheus
    ```
 3. Setup ownership as grafana
    ```sh
