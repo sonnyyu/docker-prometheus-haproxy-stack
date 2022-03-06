@@ -1,3 +1,4 @@
+Easy-rsa Link: [https://easy-rsa.readthedocs.io/en/latest](https://easy-rsa.readthedocs.io/en/latest)
 ```bash
 ./easyrsa --subject-alt-name="IP:192.168.1.203,IP:127.0.0.1,DNS:localhost" build-server-full haproxy nopass
 sudo cat haproxy.crt haproxy.key | sudo tee mysite.pem
