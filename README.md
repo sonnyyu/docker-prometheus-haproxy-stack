@@ -134,18 +134,22 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 5. Stop docker stack
    ```sh
+   docker-compose down
+   ```
+6. Remove docker stack
+   ```sh
    docker-compose down -v
    ```
-6. Delete all containers using the following command
+7. Delete all containers using the following command
    ```sh
    docker rm -f $(docker ps -a -q)
    ```
-7. Delete all volumes using the following command
+8. Delete all volumes using the following command
    ```sh
    docker volume rm $(docker volume ls -q)
    ```
    
-8. Deploying Portainer is as simple as:
+9. Deploying Portainer is as simple as:
 ```sh
  docker run -d -p 9000:9000 --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /opt/portainer:/data portainer/portainer
 ```
