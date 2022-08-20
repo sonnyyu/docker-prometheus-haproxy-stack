@@ -75,10 +75,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * Docker
 * Docker-compose
 ```sh
-sudo apt-get remove docker docker-engine docker.io
-sudo apt-get update
-sudo apt install docker.io -y
-sudo snap install docker
+#https://docs.docker.com/engine/install/ubuntu/
 docker --version
 ```
 
