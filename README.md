@@ -74,18 +74,20 @@ Of course, no one template will serve all projects since your needs may be diffe
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * Docker
 * Docker-compose
-
+```sh
 sudo apt-get remove docker docker-engine docker.io
 sudo apt-get update
 sudo apt install docker.io -y
 sudo snap install docker
 docker --version
+```
 
+```sh
 #https://github.com/docker/compose/releases
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.10.0/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
-
+```
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 ## Getting Started
