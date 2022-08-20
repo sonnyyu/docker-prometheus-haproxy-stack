@@ -144,7 +144,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    docker volume rm $(docker volume ls -q)
    ```
-
+   
+8. Deploying Portainer is as simple as:
+```sh
+ docker run -d -p 9000:9000 --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /opt/portainer:/data portainer/portainer
+```
 ​       <!-- USAGE EXAMPLES -->
 
 ## Usage
