@@ -88,6 +88,10 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.10.0/docker
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
+```sh
+sudo usermod -aG docker $USER
+```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 ## Getting Started
